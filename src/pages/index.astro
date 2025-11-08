@@ -1,5 +1,6 @@
 ---
 import MyComp from "../components/MyComp.vue";
+import MySveletComp from "../components/MySvelteComp.svelte";
 ---
 
 <html lang="en">
@@ -12,5 +13,6 @@ import MyComp from "../components/MyComp.vue";
   </head>
   <body>
     <MyComp client:only="vue" />
+    <MySveletComp client:load />
   </body>
 </html>
